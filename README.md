@@ -1,4 +1,4 @@
-## certbot-hook
+## certbot-le-hook
 
 This is a hook for certbot I use in tandem with a custom Burp Collaborator install. It allows me to automatically renew LetsEncrypt certificates using the Burp Collaborator DNS server.
 
@@ -11,4 +11,6 @@ This is a hook for certbot I use in tandem with a custom Burp Collaborator insta
 
 ### How to run
 
-`certbot certonly --manual --manual-auth-hook ./certbot-hook.sh --manual-cleanup-hook ./certbot-hook.sh -d collaborator.example.com`
+```
+certbot certonly --manual --manual-auth-hook ./certbot-le-hook.sh --manual-cleanup-hook ./certbot-le-hook.sh -d collaborator.example.com
+```
